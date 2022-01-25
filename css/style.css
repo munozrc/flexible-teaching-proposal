@@ -28,11 +28,6 @@ body {
 #app {
   width: 100%;
   background-color: var(--text-color);
-  max-width: 320px;
-  border-radius: 8px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .hero {
@@ -57,7 +52,7 @@ body {
   opacity: .28;
   background-image: url("https://static.vecteezy.com/system/resources/previews/001/938/250/large_2x/school-education-seamless-pattern-vector.jpg");
   background-size: cover;
-  filter: hue-rotate(260deg) blur(3px);
+  filter: blur(3px);
 }
 
 .hero-header {
@@ -162,7 +157,13 @@ body {
   }
 
   #app {
+    width: 100%;
     aspect-ratio: 9/16;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    max-width: 370px;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   #app::-webkit-scrollbar {
@@ -172,22 +173,18 @@ body {
   
   #app::-webkit-scrollbar-thumb {
     background: rgba(0,0,0,.12);
+    border-radius: 0 8px 8px 0;
     border: 0;
   }
   
   #app::-webkit-scrollbar-track {
     border: 0;
-    border-radius: 0;
     background: transparent;
   }
 }
 
 @media (max-width: 600px) {
-
   #app {
     height: 100vh;
-    max-width: 100%;
-    border-radius: 0;
-    box-shadow: none;
   }
 }
