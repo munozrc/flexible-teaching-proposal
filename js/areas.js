@@ -1,4 +1,4 @@
-const container = document.querySelector('#areas > aside')
+const container = document.querySelector('.areas-content')
 
 const articles = [
   {
@@ -36,15 +36,15 @@ const articles = [
 const setAreas = () => {
   articles.forEach(({ title, image, content }) => {
     container.innerHTML += `
-      <article>
-        <header>
-          <div>
-            <h4>${title}</h4>
+      <article class="areas-item">
+        <header class="areas-item-header">
+          <div class="areas-item-wrapper-title">
+            <h4 class="areas-item-title">${title}</h4>
           </div>
-          <img src="${image}" />
+          <img class="areas-item-image" src="${image}" />
         </header>
-        <footer>
-          <p>${content}</p>
+        <footer class="areas-item-footer">
+          <p class="areas-item-description">${content}</p>
         </footer>
       </article>
     `
