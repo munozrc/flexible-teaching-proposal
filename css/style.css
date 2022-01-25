@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -14,19 +15,13 @@ body {
   background-color: whitesmoke;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 #app {
   width: 100%;
-  aspect-ratio: 9/16;
   background-color: #FFF;
   max-width: 320px;
   border-radius: 8px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 20px;
 }
@@ -48,8 +43,64 @@ body {
   line-height: 1;
 }
 
-@media (max-width: 600px) {
+#areas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 0;
+}
+
+#areas aside {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#areas aside article {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  padding: 12px;
+  background-color: whitesmoke;
+}
+
+#areas aside article p {
+  text-align: left;
+  font-size: 1.1em;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #app {
+    aspect-ratio: 9/16;
+  }
+
+  #app::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  #app::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.12);
+    border: 0;
+  }
+  
+  #app::-webkit-scrollbar-track {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+
+  #app {
+    height: 100vh;
     max-width: 100%;
     border-radius: 0;
     box-shadow: none;
