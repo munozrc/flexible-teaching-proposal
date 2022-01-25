@@ -53,15 +53,62 @@ body {
 #areas aside {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
+}
+
+#areas > header {
+  margin-bottom: 20px;
+}
+
+#areas header h2 {
+  width: fit-content;
+  font-size: 1.8em;
+  padding-bottom: 4px;
+  border-bottom: 8px solid #56ab2f;
 }
 
 #areas aside article {
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, .1);
-  border-radius: 4px;
-  padding: 12px;
+  border-radius: 8px;
   background-color: whitesmoke;
+  overflow: hidden;
+  box-shadow: rgba(76, 80, 83, 0.308) 0px 8px 24px;
+}
+
+#areas aside article header {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+}
+
+#areas aside article header div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 26px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+#areas aside article header h4 {
+  color: #FAFAFA;
+  font-size: 2em;
+  line-height: .9;
+}
+
+#areas aside article header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#areas aside article footer {
+  padding: 20px;
 }
 
 #areas aside article p {
