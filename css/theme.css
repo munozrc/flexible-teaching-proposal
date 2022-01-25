@@ -1,0 +1,21 @@
+button {
+  -webkit-user-select: none;
+  border: 0;
+  cursor: pointer;
+  outline: 0 solid transparent;
+  touch-action: manipulation;
+  user-select: none;
+  word-break: break-word;
+}
+
+.btn {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 8px 18px;
+  width: fit-content;
+}
