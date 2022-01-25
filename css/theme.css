@@ -9,9 +9,9 @@ button {
 }
 
 .btn {
-  background: #56ab2f;
+  background: var(--seconday-color);
   border-radius: 999px;
-  box-shadow: #56ab2f 0 10px 20px -10px;
+  box-shadow: var(--seconday-color) 0 10px 20px -10px;
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 700;
