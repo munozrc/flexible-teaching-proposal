@@ -9,6 +9,6 @@ btnShare.addEventListener('click', () => {
   navigator.share({
     title: 'Propuesta Enseñanza Flexible',
     url: 'https://propuesta-ensenanza-flexible.netlify.app/',
-    text: ''
+    text: 'Propuesta Enseñanza Flexible'
   }).then(() => console.log('shared successfully')).catch(err => console.log({ err }))
 })
