@@ -221,7 +221,7 @@ body {
 
 #tools {
   padding: 60px 20px 30px 20px;
-  background: linear-gradient(var(--primary-color), #5d60ff );
+  background: linear-gradient(var(--primary-color), #5d60ff);
 }
 
 .tools-header {
@@ -276,6 +276,63 @@ body {
 .tools-list-item-description {
   color: #626262;
   text-align: left;
+}
+
+#info {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-item__bg {
+  background-color: var(--text-color);
+  padding: 30px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(76, 80, 83, 0.178) 0px 8px 24px;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.info-title {
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.info-title__center {
+  text-align: center;
+  line-height: 1.1;
+}
+
+.info-content {
+  width: 100%;
+  font-size: 1.1em;
+  line-height: 1.2;
+  color: #626262;
+}
+
+#footer-dev {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--primary-color), #5d60ff);
+  padding: 10px 0;
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+#footer-dev a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media (min-width: 600px) {
