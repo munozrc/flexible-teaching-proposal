@@ -43,7 +43,7 @@ const articles = [
   }
 ]
 
-const setAreas = () => {
+const loadItemsAreas = () => {
   articles.forEach(({ title, image, content }) => {
     container.innerHTML += `
       <article class="areas-item">
@@ -61,4 +61,4 @@ const setAreas = () => {
   })
 }
 
-export { setAreas }
+export { loadItemsAreas }
