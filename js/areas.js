@@ -33,27 +33,24 @@ const articles = [
   },
   {
     title: 'Pensamiento Matemático',
-    image: 'https://images.unsplash.com/photo-1529078155058-5d716f45d604?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80',
-    content: ''
-  },
-  {
-    title: 'Pensamiento Escrito',
+    subtitle: 'Pensamiento Escrito',
     image: 'https://images.unsplash.com/photo-1550592704-6c76defa9985?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     content: ''
   }
 ]
 
 const loadItemsAreas = () => {
-  articles.forEach(({ title, image, content }) => {
+  articles.forEach(({ title, subtitle, image, content }) => {
     container.innerHTML += `
       <article class="areas-item">
-        <header class="areas-item-header">
+        <header class="areas-item-header ${subtitle ? 'areas-item__padding' : ''}">
           <div class="areas-item-wrapper-title">
             <h4 class="areas-item-title">${title}</h4>
+            ${subtitle ? `<h4 class="areas-item-title">${subtitle}</h4>` : ''}
           </div>
           <img class="areas-item-image" src="${image}" />
         </header>
-        <footer class="areas-item-footer">
+        <footer class="areas-item-footer" style="display: ${content === '' ? 'none' : ' flex'}">
           <p class="areas-item-description">${content}</p>
         </footer>
       </article>
