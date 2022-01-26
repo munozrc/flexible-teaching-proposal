@@ -1,6 +1,7 @@
 import '../css/style.css'
 import '../css/theme.css'
 import { setAreas } from './areas.js'
+import { loadToolsitems } from './tools.js'
 
 const btnShare = document.querySelector('#btnShare')
 
@@ -16,3 +17,4 @@ btnShare.addEventListener('click', () => {
 
 // Load content page
 setAreas()
+loadToolsitems()
