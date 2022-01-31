@@ -76,6 +76,34 @@ body {
   text-shadow: 0px 4px 10px rgba(46, 153, 254, 0.4);
 }
 
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 100px;
+  background: none;
+}
+
+.hero-btn > svg {
+  font-size: 3em;
+  animation: slidein 2s infinite;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(60%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
 #itinerary {
   padding: 60px 20px;
   background: linear-gradient(var(--primary-color), #5d60ff );

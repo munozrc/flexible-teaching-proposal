@@ -5,6 +5,7 @@ import { loadToolsitems } from './tools.js'
 
 const btnShare = document.querySelector('#btnShare')
 const btnWhatsApp = document.querySelector('#btnWhatsApp')
+const btnHero = document.querySelector('button.hero-btn')
 
 btnShare.addEventListener('click', () => {
   if (!navigator.share) throw Error('Navigator Share API no supporter')
@@ -19,6 +20,14 @@ btnShare.addEventListener('click', () => {
 btnWhatsApp.addEventListener('click', () => {
   const url = 'https://api.whatsapp.com/send?phone=573023559991'
   window.open(url, '_blank').focus()
+})
+
+btnHero.addEventListener('click', () => {
+  window.scroll({
+    top: 100,
+    left: 100,
+    behavior: 'smooth'
+  })
 })
 
 // Load content page
