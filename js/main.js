@@ -23,9 +23,9 @@ btnWhatsApp.addEventListener('click', () => {
 })
 
 btnHero.addEventListener('click', () => {
-  window.scroll({
-    top: 100,
-    left: 100,
+  window.scrollTo({
+    top: window.innerHeight,
+    left: 0,
     behavior: 'smooth'
   })
 })
