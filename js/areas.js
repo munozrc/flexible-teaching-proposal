@@ -9,7 +9,7 @@ const articles = [
   {
     title: 'Astronomía Básica',
     image: 'https://images.unsplash.com/photo-1517461982853-d9e4fa425852?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80',
-    content: 'Aplicando en matematicas. Con posible visita al Observatorio.'
+    content: 'Aplicando en las matematicas. Con posible visita al Observatorio.'
   },
   {
     title: 'Historia',
@@ -19,7 +19,7 @@ const articles = [
   {
     title: 'Ajedréz',
     image: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80',
-    content: 'Quien este interesado, adquiere su herramienta pedago.'
+    content: 'Quien este interesado, adquiere su herramienta pedagogía.'
   },
   {
     title: 'Inglés',
